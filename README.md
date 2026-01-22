@@ -1,2 +1,17 @@
 # SIEMENS_TIAPORTALV14_ESTEIRA_TRANSPORTADORA
 SISTEM DE CONTROLE DE ESTEIRA COM SEPARAÇÃO DE PRODUTOS  criar um sistema de controle para uma esteira transportadora que separa produtos com base no tamanho. O sistema usara sensores para detectar produtos, contadores para registrar quantidades e temporizadores para controlar o funcionamento.
+
+COMPONENTES E FUNCIONALIDADES
+
+Entradas:
+1 - sensor de detecção de produto (S1-NA): Ativado quando um produto passa na esteira.
+2 - Sensor de tamanho (S2): diferencia produtos pequenos e grandes.
+3 - Botão de reset contagem (NA): operador sinaliza que pegou os itens.
+4 - Botão de emergência (B stop - NF): para todo o sistema em caso de falha.
+5 - Botão de start(NA): inicia o processo.
+
+Saidas:
+1 - Esteira transportadora(M1 - Bobina comum): Mantem o transporte dos produtos.
+2 - Atuador de separação(M2 - Bobina Set e Reset): Aciona um pistão para separar produtos grandes(Acionados por 5 s).
+3 - Alarme (A1): Sinaliza que esta cheio o pulmão(5 itens)
+
